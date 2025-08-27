@@ -1,3 +1,5 @@
+'use client';
+
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -22,12 +24,12 @@ export const NavMenu = (props: NavigationMenuProps) => (
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="#">Donaciones</Link>
+          <Link href="/Donaciones">Donaciones</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="#">Contáctanos</Link>
+          <Link href="/Contactanos">Contáctanos</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
     </NavigationMenuList>

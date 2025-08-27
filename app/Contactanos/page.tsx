@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar01Page from "@/components/navbar-01/navbar-01";
 import Footer05Page from "@/components/footer-05/footer-05";
-import Hero04 from "@/components/hero-04/hero-04";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -10,11 +9,11 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import Features02Page from "@/components/features-02/features-02";
+import Contact01Page from "@/components/contact-01/contact-01";
 
 export default function page() {
   return (
-    <div className="min-h-screen flex flex-col">
+     <div className="min-h-screen flex flex-col">
       <header>
         <Navbar01Page />
       </header>
@@ -28,18 +27,18 @@ export default function page() {
                   <BreadcrumbSeparator />
                 </BreadcrumbItem>
                 <BreadcrumbItem>
-                  <BreadcrumbPage>Acerca de nosotros</BreadcrumbPage>
+                  <BreadcrumbPage>Contactanos</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
           </div>
         </div>
-        <Hero04 />
-        <Features02Page />
+
+        <Contact01Page />
       </main>
       <footer className="mt-16">
         <Footer05Page />
       </footer>
     </div>
-  );
+  )
 }
