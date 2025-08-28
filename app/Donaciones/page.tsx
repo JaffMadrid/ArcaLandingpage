@@ -38,7 +38,7 @@ export default function page() {
         <div className=" flex items-center justify-center my-8 py-12">
           <div className="text-center">
             <b className="text-muted-foreground">Realiza tu Donación</b>
-            <h2 className="mt-3 text-2xl md:text-4xl font-bold tracking-tight">
+            <h2 className="mt-3 text-2xl text-primary md:text-4xl font-bold tracking-tight">
               Dona a nuestras cuentas bancarias
             </h2>
             <p className="mt-4 text-base sm:text-lg">
@@ -59,7 +59,7 @@ export default function page() {
                 <p className="mt-2 text-muted-foreground">
                   Gracias por tu apoyo, cada granito cuenta!
                 </p>
-                <Link className="mt-4 font-medium text-primary" href="#">
+                <Link className="mt-4 font-medium" href="#">
                   Numero de Cuenta: 723 584 251
                 </Link>
               </div>

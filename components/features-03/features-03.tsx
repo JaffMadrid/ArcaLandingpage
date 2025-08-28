@@ -5,7 +5,7 @@ const Features03Page = () => {
   return (
     <div className="w-full flex flex-col gap-6 items-center justify-start px-6">
       <div className="w-full max-w-screen-lg mx-auto px-6">
-        <h2 className="text-3xl leading-10 sm:text-4xl md:text-[40px] md:leading-[3.25rem] font-bold tracking-tight text-center">
+        <h2 className="text-3xl leading-10 text-primary sm:text-4xl md:text-[40px] md:leading-[3.25rem] font-bold tracking-tight text-center">
           Asociación Arca de Esperanzas <br />
         </h2>
         <h3 className="text-xl leading-7 sm:text-2xl md:text-[28px] md:leading-[2.5rem] font-semibold tracking-tight text-center">

@@ -59,7 +59,12 @@ function NavigationMenuItem({
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-lg font-medium hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-accent data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-accent data-[state=open]:bg-accent/50 focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1"
+  "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-lg font-medium " +
+    // hover bg -> #1e988a, hover text -> #FFAA4C; apply same for focus and open-state variants
+    "hover:bg-[#1e988a] hover:text-[#FFAA4C] focus:bg-[#1e988a] focus:text-[#FFAA4C] " +
+    "disabled:pointer-events-none disabled:opacity-50 " +
+    "data-[state=open]:hover:bg-[#1e988a] data-[state=open]:text-[#FFAA4C] data-[state=open]:focus:bg-[#1e988a] data-[state=open]:bg-[#1e988a]/50 " +
+    "focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1"
 )
 
 function NavigationMenuTrigger({
@@ -129,7 +134,10 @@ function NavigationMenuLink({
     <NavigationMenuPrimitive.Link
       data-slot="navigation-menu-link"
       className={cn(
-        "data-[active=true]:focus:bg-accent data-[active=true]:hover:bg-accent data-[active=true]:bg-accent/50 data-[active=true]:text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 rounded-sm p-2 text-lg font-medium transition-all outline-none focus-visible:ring-[3px] focus-visible:outline-1 [&_svg:not([class*='size-'])]:size-4",
+        // active/hover/focus colors updated: bg -> #1e988a, text -> #FFAA4C
+        "data-[active=true]:focus:bg-[#1e988a] data-[active=true]:hover:bg-[#1e988a] data-[active=true]:bg-[#1e988a]/50 data-[active=true]:text-[#FFAA4C] " +
+          "hover:bg-[#1e988a] hover:text-[#FFAA4C] focus:bg-[#1e988a] focus:text-[#FFAA4C] " +
+          "focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 rounded-sm p-2 text-lg font-medium transition-all outline-none focus-visible:ring-[3px] focus-visible:outline-1 [&_svg:not([class*='size-'])]:size-4",
         className
       )}
       {...props}

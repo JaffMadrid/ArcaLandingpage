@@ -7,19 +7,19 @@ import { Logo } from "../ui/logo";
 const footerLinks = [
   {
     title: "Inicio",
-    href: "#",
+    href: "/",
   },
   {
     title: "Acerca de Nosotros",
-    href: "#",
+    href: "/AcercaDeNosotros",
   },
   {
     title: "Donaciones",
-    href: "#",
+    href: "/Donaciones",
   },
   {
     title: "Contactanos",
-    href: "#",
+    href: "/Contactanos",
   },
 ];
 
@@ -36,7 +36,7 @@ const Footer05Page = () => {
               <li key={title}>
                 <Link
                   href={href}
-                  className="text-muted-foreground hover:text-foreground font-medium"
+                  className="text-primary hover:text-foreground font-medium"
                 >
                   {title}
                 </Link>
@@ -69,6 +69,15 @@ const Footer05Page = () => {
               <Image
                 src="/assets/images/facebook.svg"
                 alt="Facebook"
+                width={20}
+                height={20}
+                className="h-5 w-5"
+              />
+            </Link>
+            <Link href="https://www.instagram.com/arcadeesperanzas" target="_blank">
+              <Image
+                src="/assets/images/instagram.svg"
+                alt="Instagram"
                 width={20}
                 height={20}
                 className="h-5 w-5"

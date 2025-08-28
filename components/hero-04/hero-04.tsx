@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const Hero04 = () => {
   return (
-    <div className="  flex items-center justify-center my-8 py-12 overflow-hidden">
-      <div className="max-w-screen-xl w-full mx-auto grid lg:grid-cols-2 gap-12 px-6 py-12 lg:py-0">
+    <div className="  flex items-center justify-center py-12 overflow-hidden">
+      <div className="max-w-screen-xl w-full mx-auto grid lg:grid-cols-2 gap-12 px-6  lg:py-0">
         <div className="my-auto">
-          <h1 className="mt-6 max-w-[17ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-5xl font-bold !leading-[1.2] tracking-tight">
+          <h1 className="mt-6 max-w-[17ch] text-primary text-4xl md:text-5xl lg:text-[2.75rem] xl:text-5xl font-bold !leading-[1.2] tracking-tight">
             Arca de esperanzas: Nuestra historia
           </h1>
           <p className="mt-6 max-w-[60ch] text-lg">
@@ -37,18 +37,29 @@ const Hero04 = () => {
             proyecto de construcción de las nuevas instalaciones del Centro de
             Rehabilitación con apoyo financiero del BMZ/NANGINA de Alemania,
             este se realizara en varias etapas y contara con modernas áreas de
-            atención debidamente equipadas para brindar una atención integral e
+            atención debidamente equipadas para brindar una atención integral en
             todas las áreas de terapias.
           </p>
         </div>
-        <div className="w-full lg:aspect-auto lg:w-[1000px] lg:h-[43vh] bg-accent rounded-xl overflow-hidden my-auto">
-          <Image
-            src="/assets/images/ArcaGeneral1.jpg"
-            alt="Arca General 1"
-            width={500}
-            height={300}
-            className="w-full h-full object-contain overflow-hidden"
-          />
+        <div className="flex flex-col gap-6 justify-center">
+          <div className="w-full aspect-video bg-accent rounded-xl overflow-hidden">
+            <Image
+              src="/assets/images/ArcaGeneral1.jpg"
+              alt="Arca General 1"
+              width={500}
+              height={300}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-full aspect-video bg-accent rounded-xl overflow-hidden">
+            <Image
+              src="/assets/images/edificioarca.jpg"
+              alt="Edificio Arca"
+              width={500}
+              height={300}
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </div>

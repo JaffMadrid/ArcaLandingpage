@@ -17,7 +17,7 @@ const Features02Page = () => {
   return (
     <div className="flex items-center justify-center py-12">
       <div className="w-full">
-        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-center">
+        <h2 className="text-4xl text-primary sm:text-5xl font-bold tracking-tight text-center">
           Mision y Vision
         </h2>
         <div className="mt-10 flex justify-center gap-12 max-w-screen-lg w-full mx-auto px-6">
