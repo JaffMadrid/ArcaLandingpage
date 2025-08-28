@@ -98,7 +98,7 @@ const Contact01Page = () => (
             />
           </div>
           <h3 className="mt-6 font-semibold text-xl">Instagram</h3>
-          <Link className="mt-4 font-medium " href="https://www.tiktok.com/@asociacin.arca.de">
+          <Link className="mt-4 font-medium " href="https://www.instagram.com/arcadeesperanzas">
             asociacionarcadeesperanzas
           </Link>
         </div>
